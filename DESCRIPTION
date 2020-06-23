@@ -1,0 +1,12 @@
+Package: gliomaData
+Type: Package
+Title: HGG data all rights IGR
+Version: 0.4
+Date: 2012-07-27
+Author: C Philippe and V Frouin
+Maintainer: <vincent.frouin@cea.fr>
+Description: High Grade Glioma data. All rights Institut Gustave Roussy
+License: contact IGR Villejuif France
+Collate: 'clinic.R' 'CGH_annot.R' 'GE_annot.R' 'ge_cgh_locIGR.R'
+        'histo.R' 'img.R' 'surv.R'
+Packaged: 2012-09-05 09:16:56 UTC; vf140245

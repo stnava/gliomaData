@@ -1,0 +1,38 @@
+\docType{data}
+\name{ge_cgh_locIGR}
+\alias{ge_cgh_locIGR}
+\title{list containing HGG 3 block data}
+\format{one instance, 1 row per patient}
+\source{
+  IGR, Villejuif, France
+}
+\description{
+  This data set contains a list of 3 dataframe. On
+  dataframe for GE, CGH and localization. This dat is the
+  2nd version of segmentation. Misclassified patients were
+  excluded and segmentation was re-run excluding those
+  patients (done july 2012 - C Philippe)
+}
+\examples{
+\dontrun{
+library(gliomaData)
+#read data
+data(ge_cgh_locIGR)
+names(ge_cgh_locIGR)
+names(ge_cgh_locIGR$multiblocks)
+class(ge_cgh_locIGR$multiblocks$GE)
+class(ge_cgh_locIGR$multiblocks$CGH)
+class(ge_cgh_locIGR$multiblocks$y)
+head(ge_cgh_locIGR$multiblocks$y)
+class(ge_cgh_locIGR$ylabel)
+# See difference between multiblock_y (a dummy variable matrix)
+# and ylabel a vector of labels (1, 2, 3)
+head(ge_cgh_locIGR$ylabel,10)
+head(ge_cgh_locIGR$multiblocks$y,10)
+}
+}
+\author{
+  V Frouin, 2012-07-31
+}
+\keyword{datasets}
+
